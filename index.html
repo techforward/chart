@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>graph</title>
+    <link rel="stylesheet" href="./chartSample.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>graph</h1>
+      <div class="chart-area" id="wrapper1"></div>
+      <div class="chart-area" id="wrapper2"></div>
+      <div class="chart-area" id="wrapper3"></div>
+    </div>
+  </body>
+  <script src="./showChart.js"></script>
+  <script>
+    window.onload = function() {
+      makePieChart("wrapper1", "chart1", "pieChartSheet.csv");
+      makeLineChart("wrapper2", "chart2", "lineChartSheet.csv");
+      makeBarChart("wrapper3", "chart3", "barChartSheet.csv");
+    };
+  </script>
+</html>
